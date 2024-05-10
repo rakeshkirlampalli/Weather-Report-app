@@ -56,7 +56,7 @@ const Login = () => {
   });
 
   return (
-    <div style={{ height: '100vh' }} className="container d-flex justify-content-center align-items-center">
+    <div style={{ height: '100vh',width:"100%" }} className="container d-flex justify-content-center align-items-center">
       <div className="row justify-content-center ">
         <div className="col-md-12">
           <div className="card shadow">
@@ -67,6 +67,7 @@ const Login = () => {
                 <GoogleLogin
                   onSuccess={credentialResponse => {
                     console.log(credentialResponse);
+
                   }}
                   onError={() => {
                     console.log('Login Failed');
