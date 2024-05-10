@@ -62,7 +62,7 @@ const Login = () => {
           <div className="card shadow">
             <div className="card-body d-flex flex-column justify-content-center align-items-center">
               <img style={{ maxWidth: '400px' }} src="https://cdn3d.iconscout.com/3d/premium/thumb/drizzle-weather-7096832-5753008.png" alt="" />
-              <h2 className="card-title text-center mb-4">Weather Reporterrrrr</h2>
+              <h2 className="card-title text-center mb-4">Weather Reporter</h2>
               <div>
                 <GoogleLogin
                   onSuccess={credentialResponse => {
