@@ -111,7 +111,7 @@ const CityForecast = () => {
                                   <GetWeatherIcon temp={item.main.temp}/>                                
                                     <p>Date: {item.dt_txt}</p>
                                     <p>Temperature: {item.main.temp} °C</p>
-                                    <p>Clouds: {item.weather[0].description}</p>
+                                    <p style={{fontSize:"14px"}} className='fw-medium'>Clouds: {item.weather[0].description}</p>
                                 </div>
                             ))}
                         </div>
