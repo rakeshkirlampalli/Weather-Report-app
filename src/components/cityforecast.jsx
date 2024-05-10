@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import Navbar from './navbar';
+import { useSelector } from 'react-redux';
 
 const CityForecast = () => {
     const [cityName, setCityName] = useState('');
     const [forecastData, setForecastData] = useState(null);
     const [error, setError] = useState('');
+    const user = useSelector(state => state.user);
+    if (!user.isLogin && !user.isFetching) {
+      window.location.href = '/';
+  }
+
     function GetWeatherIcon({temp}) {
         if (temp > 34) {
           return (
